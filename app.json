@@ -1,0 +1,31 @@
+{
+  "name": "Telegram Bot",
+  "description": "A bot for Telegram with flooding and other features.",
+  "keywords": ["telegram", "bot", "python"],
+  "repository": "https://github.com/yourusername/your-repo",
+  "env": {
+    "TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "value": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "value": "123456789"
+    }
+  },
+  "formation": {
+    "worker1": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker2": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
